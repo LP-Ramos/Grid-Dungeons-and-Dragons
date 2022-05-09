@@ -1,0 +1,173 @@
+@import 'global.css';
+
+header{
+    background-color: var(--color-dark);
+    margin-bottom: 15px;
+    box-shadow: var(--shadow-color) 0px 5px 10px;
+}
+
+.box h1{
+    color: var(--white);
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn{
+    width: 120px;
+    height: 30px;
+    background-color: var(--color-tertiary);
+    border: var(--color-primary) solid 2px;
+    color: var(--color-primary);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.7em;
+}
+
+
+.btn:hover{
+    background-color: var(--color-secondary);
+    color: var(--white)
+}
+
+.active-button{
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+
+header hr{
+    width: 65%;
+
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    margin: 15px auto;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    color: var(--white);
+}
+
+.btnMenu{
+    width: 70px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border: var(--color-primary) solid 2px;
+    color: var(--color-primary);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btnMenu:hover{
+    background-color: var(--color-secondary);
+    color: var(--white)
+}
+
+.btnAction{
+    width: 100px;
+    height: 25px;
+    background-color: var(--color-primary);
+    border: var(--white) solid 2px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.btnAction:hover{
+    background-color: var(--color-secondary);
+    color: var(--white)
+}
+
+.grid{
+    width: 940px;
+    height: 470px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border: 5px solid var(--color-light);
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1040px;
+    height: 470px;
+}
+
+.grid-tile{
+    border: var(--black) solid 1px;
+    background-color: var(--color-lighter);
+    width: 5%;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+.grid-tile:hover, .initiative-tile:hover{
+    background-color: var(--color-light);
+    cursor: pointer;
+}
+
+.grid-tile:active, .initiative-tile:active{
+    background-color: var(--color-primary);
+    cursor: pointer;
+}
+
+.grid-initiative{
+    width: 57px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px auto;
+    border: 5px solid var(--color-light);
+}
+
+.initiative-tile{
+    border: var(--black) solid 1px;
+    background-color: var(--color-lighter);
+    width: 100%;
+    height: 10%;
+    box-sizing: border-box;
+}
+
+.active-tile{
+    background-color: var(--active-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-tile{
+    background-color: var(--select-color)
+}
+
+.char-img{
+    width: 100%;
+    height: 100%;
+}

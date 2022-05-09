@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Grid D&D</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.index.css">
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h1>Dungeons & Dragons - Grid</h1>
+
+            <a href="./add.html"><button class="btn">Add Char/Monster</button></a>
+            <button id="uploadBtn" class="btn">Upload<br>Backup Data</button>
+            <button id="downloadBtn" class="btn">Download<br>Backup Data</button>
+        </div>
+
+        <hr>
+
+        <nav>
+            <div class="box">
+                <ul>
+                    <li id="btnUndo" class="btnMenu">&#8634;</li>
+                    <li id="btnChangeDirection" class="btnMenu">&#8644;</li>
+                    <li id="btnAction" class="btnAction">Next Action</li>
+                    <li id="btnRollDice" class="btnMenu">Roll Dice!</li>
+                    <li id="btnRollInitiative" class="btnMenu">Roll Init!</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <container id="grid" class="grid">
+            <span id="1" class="grid-tile"></span>
+            <span id="2" class="grid-tile"></span>
+            <span id="3" class="grid-tile"></span>
+            <span id="4" class="grid-tile"></span>
+            <span id="5" class="grid-tile"></span>
+            <span id="6" class="grid-tile"></span>
+            <span id="7" class="grid-tile"></span>
+            <span id="8" class="grid-tile"></span>
+            <span id="9" class="grid-tile"></span>
+            <span id="10" class="grid-tile"></span>
+            <span id="11" class="grid-tile"></span>
+            <span id="12" class="grid-tile"></span>
+            <span id="13" class="grid-tile"></span>
+            <span id="14" class="grid-tile"></span>
+            <span id="15" class="grid-tile"></span>
+            <span id="16" class="grid-tile"></span>
+            <span id="17" class="grid-tile"></span>
+            <span id="18" class="grid-tile"></span>
+            <span id="19" class="grid-tile"></span>
+            <span id="20" class="grid-tile"></span>
+            <span id="21" class="grid-tile"></span>
+            <span id="22" class="grid-tile"></span>
+            <span id="23" class="grid-tile"></span>
+            <span id="24" class="grid-tile"></span>
+            <span id="25" class="grid-tile"></span>
+            <span id="26" class="grid-tile"></span>
+            <span id="27" class="grid-tile"></span>
+            <span id="28" class="grid-tile"></span>
+            <span id="29" class="grid-tile"></span>
+            <span id="30" class="grid-tile"></span>
+            <span id="31" class="grid-tile"></span>
+            <span id="32" class="grid-tile"></span>
+            <span id="33" class="grid-tile"></span>
+            <span id="34" class="grid-tile"></span>
+            <span id="35" class="grid-tile"></span>
+            <span id="36" class="grid-tile"></span>
+            <span id="37" class="grid-tile"></span>
+            <span id="38" class="grid-tile"></span>
+            <span id="39" class="grid-tile"></span>
+            <span id="40" class="grid-tile"></span>
+            <span id="41" class="grid-tile"></span>
+            <span id="42" class="grid-tile"></span>
+            <span id="43" class="grid-tile"></span>
+            <span id="44" class="grid-tile"></span>
+            <span id="45" class="grid-tile"></span>
+            <span id="46" class="grid-tile"></span>
+            <span id="47" class="grid-tile"></span>
+            <span id="48" class="grid-tile"></span>
+            <span id="49" class="grid-tile"></span>
+            <span id="50" class="grid-tile"></span>
+            <span id="51" class="grid-tile"></span>
+            <span id="52" class="grid-tile"></span>
+            <span id="53" class="grid-tile"></span>
+            <span id="54" class="grid-tile"></span>
+            <span id="55" class="grid-tile"></span>
+            <span id="56" class="grid-tile"></span>
+            <span id="57" class="grid-tile"></span>
+            <span id="58" class="grid-tile"></span>
+            <span id="59" class="grid-tile"></span>
+            <span id="60" class="grid-tile"></span>
+            <span id="61" class="grid-tile"></span>
+            <span id="62" class="grid-tile"></span>
+            <span id="63" class="grid-tile"></span>
+            <span id="64" class="grid-tile"></span>
+            <span id="65" class="grid-tile"></span>
+            <span id="66" class="grid-tile"></span>
+            <span id="67" class="grid-tile"></span>
+            <span id="68" class="grid-tile"></span>
+            <span id="69" class="grid-tile"></span>
+            <span id="70" class="grid-tile"></span>
+            <span id="71" class="grid-tile"></span>
+            <span id="72" class="grid-tile"></span>
+            <span id="73" class="grid-tile"></span>
+            <span id="74" class="grid-tile"></span>
+            <span id="75" class="grid-tile"></span>
+            <span id="76" class="grid-tile"></span>
+            <span id="77" class="grid-tile"></span>
+            <span id="78" class="grid-tile"></span>
+            <span id="79" class="grid-tile"></span>
+            <span id="80" class="grid-tile"></span>
+            <span id="81" class="grid-tile"></span>
+            <span id="82" class="grid-tile"></span>
+            <span id="83" class="grid-tile"></span>
+            <span id="84" class="grid-tile"></span>
+            <span id="85" class="grid-tile"></span>
+            <span id="86" class="grid-tile"></span>
+            <span id="87" class="grid-tile"></span>
+            <span id="88" class="grid-tile"></span>
+            <span id="89" class="grid-tile"></span>
+            <span id="90" class="grid-tile"></span>
+            <span id="91" class="grid-tile"></span>
+            <span id="92" class="grid-tile"></span>
+            <span id="93" class="grid-tile"></span>
+            <span id="94" class="grid-tile"></span>
+            <span id="95" class="grid-tile"></span>
+            <span id="96" class="grid-tile"></span>
+            <span id="97" class="grid-tile"></span>
+            <span id="98" class="grid-tile"></span>
+            <span id="99" class="grid-tile"></span>
+            <span id="100" class="grid-tile"></span>
+            <span id="101" class="grid-tile"></span>
+            <span id="102" class="grid-tile"></span>
+            <span id="103" class="grid-tile"></span>
+            <span id="104" class="grid-tile"></span>
+            <span id="105" class="grid-tile"></span>
+            <span id="106" class="grid-tile"></span>
+            <span id="107" class="grid-tile"></span>
+            <span id="108" class="grid-tile"></span>
+            <span id="109" class="grid-tile"></span>
+            <span id="110" class="grid-tile"></span>
+            <span id="111" class="grid-tile"></span>
+            <span id="112" class="grid-tile"></span>
+            <span id="113" class="grid-tile"></span>
+            <span id="114" class="grid-tile"></span>
+            <span id="115" class="grid-tile"></span>
+            <span id="116" class="grid-tile"></span>
+            <span id="117" class="grid-tile"></span>
+            <span id="118" class="grid-tile"></span>
+            <span id="119" class="grid-tile"></span>
+            <span id="120" class="grid-tile"></span>
+            <span id="121" class="grid-tile"></span>
+            <span id="122" class="grid-tile"></span>
+            <span id="123" class="grid-tile"></span>
+            <span id="124" class="grid-tile"></span>
+            <span id="125" class="grid-tile"></span>
+            <span id="126" class="grid-tile"></span>
+            <span id="127" class="grid-tile"></span>
+            <span id="128" class="grid-tile"></span>
+            <span id="129" class="grid-tile"></span>
+            <span id="130" class="grid-tile"></span>
+            <span id="131" class="grid-tile"></span>
+            <span id="132" class="grid-tile"></span>
+            <span id="133" class="grid-tile"></span>
+            <span id="134" class="grid-tile"></span>
+            <span id="135" class="grid-tile"></span>
+            <span id="136" class="grid-tile"></span>
+            <span id="137" class="grid-tile"></span>
+            <span id="138" class="grid-tile"></span>
+            <span id="139" class="grid-tile"></span>
+            <span id="140" class="grid-tile"></span>
+            <span id="141" class="grid-tile"></span>
+            <span id="142" class="grid-tile"></span>
+            <span id="143" class="grid-tile"></span>
+            <span id="144" class="grid-tile"></span>
+            <span id="145" class="grid-tile"></span>
+            <span id="146" class="grid-tile"></span>
+            <span id="147" class="grid-tile"></span>
+            <span id="148" class="grid-tile"></span>
+            <span id="149" class="grid-tile"></span>
+            <span id="150" class="grid-tile"></span>
+            <span id="151" class="grid-tile"></span>
+            <span id="152" class="grid-tile"></span>
+            <span id="153" class="grid-tile"></span>
+            <span id="154" class="grid-tile"></span>
+            <span id="155" class="grid-tile"></span>
+            <span id="156" class="grid-tile"></span>
+            <span id="157" class="grid-tile"></span>
+            <span id="158" class="grid-tile"></span>
+            <span id="159" class="grid-tile"></span>
+            <span id="160" class="grid-tile"></span>
+            <span id="161" class="grid-tile"></span>
+            <span id="162" class="grid-tile"></span>
+            <span id="163" class="grid-tile"></span>
+            <span id="164" class="grid-tile"></span>
+            <span id="165" class="grid-tile"></span>
+            <span id="166" class="grid-tile"></span>
+            <span id="167" class="grid-tile"></span>
+            <span id="168" class="grid-tile"></span>
+            <span id="169" class="grid-tile"></span>
+            <span id="170" class="grid-tile"></span>
+            <span id="171" class="grid-tile"></span>
+            <span id="172" class="grid-tile"></span>
+            <span id="173" class="grid-tile"></span>
+            <span id="174" class="grid-tile"></span>
+            <span id="175" class="grid-tile"></span>
+            <span id="176" class="grid-tile"></span>
+            <span id="177" class="grid-tile"></span>
+            <span id="178" class="grid-tile"></span>
+            <span id="179" class="grid-tile"></span>
+            <span id="180" class="grid-tile"></span>
+            <span id="181" class="grid-tile"></span>
+            <span id="182" class="grid-tile"></span>
+            <span id="183" class="grid-tile"></span>
+            <span id="184" class="grid-tile"></span>
+            <span id="185" class="grid-tile"></span>
+            <span id="186" class="grid-tile"></span>
+            <span id="187" class="grid-tile"></span>
+            <span id="188" class="grid-tile"></span>
+            <span id="189" class="grid-tile"></span>
+            <span id="190" class="grid-tile"></span>
+            <span id="191" class="grid-tile"></span>
+            <span id="192" class="grid-tile"></span>
+            <span id="193" class="grid-tile"></span>
+            <span id="194" class="grid-tile"></span>
+            <span id="195" class="grid-tile"></span>
+            <span id="196" class="grid-tile"></span>
+            <span id="197" class="grid-tile"></span>
+            <span id="198" class="grid-tile"></span>
+            <span id="199" class="grid-tile"></span>
+            <span id="200" class="grid-tile"></span>
+        </container>
+
+        <container id="grid-initiative" class="grid-initiative">
+            <span id="i01" class="initiative-tile"></span>
+            <span id="i02" class="initiative-tile"></span>
+            <span id="i03" class="initiative-tile"></span>
+            <span id="i04" class="initiative-tile"></span>
+            <span id="i05" class="initiative-tile"></span>
+            <span id="i06" class="initiative-tile"></span>
+            <span id="i07" class="initiative-tile"></span>
+            <span id="i08" class="initiative-tile"></span>
+            <span id="i09" class="initiative-tile"></span>
+            <span id="i10" class="initiative-tile"></span>
+        </container>
+    </main>
+
+    <footer><p>Developed by: <a href="https://www.linkedin.com/in/lp-ramos/">LP-Ramos</a></p></footer>
+</body>
+    <script src="js/script.js"></script>
+</html>

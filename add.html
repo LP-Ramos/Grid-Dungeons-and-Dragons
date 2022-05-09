@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Grid D&D | Add</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.add.css">
+</head>
+<body>
+    <header>
+        <div class="box">
+            <a href="./index.html"><button class="btn">Back to Grid</button></a>
+        
+            <h1>Add Character / Monster</h1>
+
+            <div style="width: 120px;"></div>
+        </div>
+
+    </header>
+
+    <main id="add" class="tools">
+        <form class="form-char">
+            <div class="form-char-1">
+                    <label for="char-name">Character's name:</label>
+                    <input type="text" id="char-name" name="char-name" placeholder="Bruenor">
+            </div>
+    
+                <div class="form-char-2">
+                    <div>
+                        <label for="char-level">Level:</label>
+                        <input type="number" id="char-level" name="char-level" placeholder="10" required>
+                    </div>
+    
+                    <div>
+                        <label for="char-class">Class:</label>
+                        <select id="char-class" name="char-class" required>
+                            <option value="barbarian">Bárbaro</option>
+                            <option value="bard">Bardo</option>
+                            <option value="cleric">Clérigo</option>
+                            <option value="druid">Druida</option>
+                            <option value="fighter">Guerreiro</option>
+                            <option value="monk">Monge</option>
+                            <option value="paladin">Paladino</option>
+                            <option value="ranger">Arqueiro</option>
+                            <option value="rogue">Ladino</option>
+                            <option value="sorcerer">Bruxo</option>
+                            <option value="warlock">Feiticeiro</option>
+                            <option value="wizard">Feiticeiro</option>
+                        </select>
+                    </div>
+    
+                    <div>
+                        <label for="char-race">Race:</label>
+                        <select id="char-race" name="char-race" required>
+                            <option value="human">Humano</option>
+                            <option value="elf">Elfo</option>
+                            <option value="dwarf">Anão</option>
+                            <option value="halfling">Meio-elfo</option>
+                            <option value="half-elf">Meio-elfo</option>
+                            <option value="half-orc">Meio-orc</option>
+                            <option value="gnome">Gnomo</option>
+                            <option value="half-dragon">Meio-dragão</option>
+                            <option value="dragonborn">Dragonborn</option>
+                            <option value="tiefling">Tiefling</option>
+                        </select>
+                    </div>
+                </div>
+    
+            <div class="form-char-3">
+                <div>
+                    <label for="char-str">STR:</label>
+                    <input type="number" id="char-str" name="char-str" placeholder="Strength" required>
+    
+                    <label for="char-dex">DEX:</label>
+                    <input type="number" id="char-dex" name="char-dex" placeholder="Dexterity" required>
+    
+                    <label for="char-con">CON:</label>
+                    <input type="number" id="char-con" name="char-con" placeholder="Constitution" required>
+                </div>
+    
+                <div>
+                    <label for="char-int">INT:</label>
+                    <input type="number" id="char-int" name="char-int" placeholder="Intelligence" required>
+    
+                    <label for="char-wis">WIS:</label>
+                    <input type="number" id="char-wis" name="char-wis" placeholder="Wisdow" required>
+    
+                    <label for="char-cha">CAR:</label>
+                    <input type="number" id="char-cha" name="char-cha" placeholder="Charism" required>
+                </div>
+            </div>
+    
+            <div class="form-char-4">
+                <div>
+                    <label for="char-img">Image:</label>
+                    <input type="file" id="char-img" name="char-img">
+                </div>
+    
+                <div>
+                    <button type="submit">ADD Character</button>
+                </div>
+            </div>
+        </form>
+
+        <hr>
+    
+        <form class="form-monster">
+            <div class="form-monster-1">
+                <label for="monster-name">Monster's name:</label>
+                <input type="text" id="monster-name" name="monster-name" placeholder="white Dragon" required>
+            </div>
+    
+            <div class="form-monster-2">
+                <div>
+                    <label for="monster-level">Level:</label>
+                    <input type="number" id="monster-level" name="monster-level" placeholder="10" required>
+                </div>
+            </div>
+
+            <div class="form-monster-3">
+                <div>
+                    <label for="char-img">Image:</label>
+                    <input type="file" id="char-img" name="char-img">
+                </div>
+
+                <button type="submit">ADD Monster</button>
+            </div>
+        </form>
+    </main>
+
+    <div class="box">
+        <div class="details-1">
+            <h2>Characters:</h2>
+            <div class="details-2">
+                <table>
+                    <tbody class="details-char">
+                        <tr>
+                            <td>Name</td>
+                            <td>Level</td>
+                            <td>Class</td>
+                            <td>Race</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="details-1">
+            <h2>Monsters:</h2>
+            <div class="details-2">
+                <table>
+                    <tbody class="details-monster">
+                        <tr>
+                            <td>Name</td>
+                            <td>Level</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer><p>Developed by: <a href="https://www.linkedin.com/in/lp-ramos/">LP-Ramos</a></p></footer>
+</body>
+    <script src="js/script.js"></script>
+</html>
